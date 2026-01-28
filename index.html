@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أكاديمية النجاح | bazziai.com</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+        body { font-family: 'Cairo', sans-serif; scroll-behavior: smooth; }
+        .gradient-bg { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); }
+        .announcement-bar { transition: all 0.5s ease-in-out; }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <div id="live-alert" class="announcement-bar bg-yellow-400 text-center py-3 font-bold hidden shadow-md">
+        <i class="fas fa-bolt mr-2 text-red-600"></i>
+        <span id="alert-text">جاري استقبال تحديثات من مختبر Ram...</span>
+    </div>
+
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-600">أكاديمية <span class="text-blue-900">BAZZIAI</span></h1>
+            <div class="hidden md:flex space-x-reverse space-x-8 font-semibold">
+                <a href="#home" class="hover:text-blue-600 transition">الرئيسية</a>
+                <a href="#courses" class="hover:text-blue-600 transition">المواد الدراسية</a>
+                <a href="#features" class="hover:text-blue-600 transition">مميزاتنا</a>
+                <button class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-800 shadow-md transition">دخول الطلاب</button>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="gradient-bg text-white py-24 px-4 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">طريقك للتميز في <br>الثالثة إعدادي</h2>
+            <p class="text-xl mb-10 opacity-90">أول منصة تعليمية تفاعلية تدار مباشرة من مختبراتنا الرقمية لضمان أحدث المحتويات.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#courses" class="bg-white text-blue-900 px-10 py-4 rounded-xl font-bold text-lg shadow-xl hover:bg-gray-100 transition">تصفح الدروس</a>
+                <a href="#" class="border-2 border-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-blue-900 transition">تواصل معنا</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="courses" class="max-w-7xl mx-auto py-20 px-4">
+        <div class="text-center mb-16">
+            <h3 class="text-4xl font-bold text-gray-800">برامجنا التعليمية</h3>
+            <div class="h-1 w-20 bg-blue-600 mx-auto mt-4"></div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div class="bg-white p-8 rounded-3xl shadow-xl border-t-8 border-blue-500 hover:-translate-y-3 transition-all duration-300">
+                <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                    <i class="fas fa-square-root-variable text-3xl text-blue-600"></i>
+                </div>
+                <h4 class="text-2xl font-bold mb-3 text-gray-800">الرياضيات</h4>
+                <p class="text-gray-600 mb-6">شرح مفصل للجذور، القوى، ومبرهنة طاليس مع تمارين تطبيقية.</p>
+                <div id="math-status" class="bg-blue-50 text-blue-700 px-4 py-2 rounded-lg text-sm font-bold mb-6">
+                    <i class="fas fa-check-circle ml-2"></i>محتوى مستقر
+                </div>
+                <button class="w-full bg-gray-800 text-white py-3 rounded-xl font-bold hover:bg-blue-600 transition">ابدأ الدرس</button>
+            </div>
+
+            <div class="bg-white p-8 rounded-3xl shadow-xl border-t-8 border-purple-500 hover:-translate-y-3 transition-all duration-300">
+                <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
+                    <i class="fas fa-atom text-3xl text-purple-600"></i>
+                </div>
+                <h4 class="text-2xl font-bold mb-3 text-gray-800">الفيزياء والكيمياء</h4>
+                <p class="text-gray-600 mb-6">دروس الكهرباء، المادة والخواص الكيميائية بأسلوب مبسط جداً.</p>
+                <button class="w-full bg-gray-800 text-white py-3 rounded-xl font-bold hover:bg-purple-600 transition">ابدأ الدرس</button>
+            </div>
+
+            <div class="bg-white p-8 rounded-3xl shadow-xl border-t-8 border-green-500 hover:-translate-y-3 transition-all duration-300">
+                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                    <i class="fas fa-globe-americas text-3xl text-green-600"></i>
+                </div>
+                <h4 class="text-2xl font-bold mb-3 text-gray-800">اللغة الإنجليزية</h4>
+                <p class="text-gray-600 mb-6">إتقان القواعد (Grammar) والتحضير الجيد للامتحان الجهوي.</p>
+                <button class="w-full bg-gray-800 text-white py-3 rounded-xl font-bold hover:bg-green-600 transition">ابدأ الدرس</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12 text-center">
+        <p class="text-lg">جميع الحقوق محفوظة © 2026 لأكاديمية BAZZIAI - تم التطوير بواسطة <b>Ram</b></p>
+    </footer>
+
+    <script>
+        // رابط النفق الخاص بك (تأكد من تحديثه إذا أعدت تشغيل cloudflared)
+        const tunnelUrl = "https://talked-bigger-raise-keys.trycloudflare.com/get-updates";
+
+        async function fetchLabUpdates() {
+            try {
+                // إعداد المهلة الزمنية لعدم انتظار السيرفر طويلاً إذا كان مغلقاً
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 3000);
+
+                const response = await fetch(tunnelUrl, { signal: controller.signal });
+                const data = await response.json();
+
+                if (data.status === "online") {
+                    const alertDiv = document.getElementById('live-alert');
+                    const alertText = document.getElementById('alert-text');
+                    const mathStatus = document.getElementById('math-status');
+
+                    // تحديث الإعلان القادم من هاتف Ram
+                    alertText.innerHTML = `<span class='animate-pulse'>${data.announcement}</span>`;
+                    alertDiv.classList.remove('hidden');
+
+                    // تحديث حالة مادة الرياضيات
+                    mathStatus.innerHTML = `<i class="fas fa-star ml-2"></i>${data.new_lesson}`;
+                    mathStatus.classList.replace('bg-blue-50', 'bg-yellow-100');
+                    mathStatus.classList.replace('text-blue-700', 'text-yellow-700');
+                }
+            } catch (error) {
+                console.log("حالة المختبر: أوفلاين. تعمل النسخة المستقرة من bazziai.com");
+                document.getElementById('live-alert').classList.add('hidden');
+            }
+        }
+
+        // فحص التحديثات كل 15 ثانية لضمان سرعة الاستجابة
+        setInterval(fetchLabUpdates, 15000);
+        // الفحص فور دخول الزائر
+        fetchLabUpdates();
+    </script>
+</body>
+</html>
